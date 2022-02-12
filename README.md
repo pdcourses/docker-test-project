@@ -1,3 +1,16 @@
+#`****************************`
+
+# `запуск`
+
+docker rm -f app_container
+docker rmi react-app
+
+sudo docker build -t react-app:latest .
+
+docker run -p 3000:8080 --name app_container -d react-app
+
+#`****************************`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
